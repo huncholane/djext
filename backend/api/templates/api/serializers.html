@@ -1,0 +1,9 @@
+<pre>from rest_framework import serializers
+from {{root_dir}}.models import {{model_name}}
+
+
+class {{model_name}}Serializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = {{model_name}}
+        fields = '__all__'
+</pre>

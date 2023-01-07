@@ -1,0 +1,11 @@
+<pre>from django.urls import path, include
+from api.{{api_name}}.views import {{model_name}}ViewSet
+from rest_framework.routers import SimpleRouter
+
+router = SimpleRouter()
+router.register(r'{{api_name}}', {{model_name}}ViewSet)
+
+urlpatterns = [
+    path('', include(router.urls)),
+]
+</pre>

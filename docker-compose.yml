@@ -1,7 +1,7 @@
 services:
-  nppn:
+  djext:
     build: .
-    container_name: nppn
+    container_name: djext
     volumes:
       - ./postgres:/var/lib/postgresql/data
     ports:
